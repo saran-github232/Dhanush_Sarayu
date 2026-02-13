@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Sarayu ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-hearts" id="heartsContainer"></div>
+    
+    <!-- Static Background -->
+    <img src="img/1.jpeg" id="static-bg" alt="Romantic Background">
+
+    <!-- Intro Overlay -->
+    <div id="intro-overlay">
+        <div class="intro-text-container">
+            <h1 class="intro-name">To Sarayu</h1>
+            <p class="intro-sender">- From Dhanush</p>
+        </div>
+        <div class="pulsing-heart">❤️</div>
+        <p class="tap-instruction">Tap to Open</p>
+    </div>
+
+    <!-- Main Content (Hidden initially) -->
+    <main id="mainContent" class="hidden">
+        <nav class="glass nav-bar">
+            <button class="nav-btn active" data-tab="home">Home</button>
+            <button class="nav-btn" data-tab="story">Our Story</button>
+            <button class="nav-btn" data-tab="reasons">My Reasons</button>
+            <button class="nav-btn" data-tab="valentine">My Question</button>
+        </nav>
+
+        <section id="home" class="tab-content active">
+            <div class="glass card">
+                <img src="assets/pandapanah.gif" alt="Panda" class="tab-gif">
+                <h1 class="title">Hey Sarayu...</h1>
+                <p class="subtitle" id="typewriterTitle"></p>
+                <img src="assets/bunga.gif" alt="Flowers" class="tab-gif-small">
+            </div>
+        </section>
+
+        <section id="story" class="tab-content">
+            <div id="story-heart-effect" class="hidden">❤️</div>
+            <div class="glass card">
+                <h2 class="title">Our Beautiful Journey</h2>
+                <div class="slideshow-container">
+                    <div class="slide fade">
+                        <img src="images/WhatsApp Image 2026-02-13 at 12.29.22 AM (2).jpeg" class="slide-img" alt="Memory 1">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/WhatsApp Image 2026-02-13 at 12.29.22 AM.jpeg" class="slide-img" alt="Memory 2">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/WhatsApp Image 2026-02-13 at 12.29.23 AM.jpeg" class="slide-img" alt="Memory 3">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/WhatsApp Image 2026-02-13 at 12.29.24 AM (1).jpeg" class="slide-img" alt="Memory 4">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/WhatsApp Image 2026-02-13 at 12.29.24 AM.jpeg" class="slide-img" alt="Memory 5">
+                    </div>
+                    <!-- Navigation buttons removed for auto-only mode -->
+                </div>
+                <p class="story-text">
+                    You are the magic that turned my ordinary days into a beautiful adventure. Every picture here tells a story, but the best chapters are the ones we haven't written yet. I just want you to know-you are the home my soul feels safest in.
+                </p>
+            </div>
+        </section>
+
+        <section id="reasons" class="tab-content">
+            <div class="glass card">
+                <h2 class="title">My Reasons</h2>
+                <img src="assets/mikir.gif" alt="Thinking" id="reasonGif" class="tab-gif">
+                <div class="reasons-box">
+                    <p id="reasonText" class="reason-text">Click the button below to see a reason...</p>
+                    <button id="reasonBtn" class="btn btn-reason">Reveal Reason ✨</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="valentine" class="tab-content">
+            <div class="glass card">
+                <img src="assets/0906-peacegoma.gif" alt="Will you?" class="tab-gif" id="valentineGif">
+                <h1 class="title">Sarayu, will you be my Valentine?</h1>
+                <div class="buttons">
+                    <button id="yesBtn" class="btn btn-yes">Yes❤️</button>
+                    <button id="noBtn" class="btn btn-no">No</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="successModal" class="modal glass hidden">
+        <div class="modal-content">
+            <h2 class="success-title">YAAAY! 🎉</h2>
+            <img src="assets/ciumin.gif" alt="Happy" class="success-gif">
+            <h1>Yay! I Love You! ❤️</h1>
+            <p>Happy Valentine's Day!</p>
+            <!-- <p class="success-text">You've made me the happiest person ever! ❤️</p> -->
+            <!-- <button id="closeModal" class="btn btn-yes">Close</button> -->
+        </div>
+    </div>
+
+    <!-- Audio Elements -->
+    <audio id="bgm-home" src="song2.mp3" loop></audio>
+    <audio id="bgm-story" src="sun sathiya.mp3" loop></audio>
+    <audio id="bgm-reasons" src="ria.mp3" loop></audio>
+    <audio id="bgm-question" src="boom.mp3" loop></audio>
+    <audio id="sfx-yes" src="yedhee.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
